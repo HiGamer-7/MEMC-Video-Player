@@ -11,6 +11,13 @@ rootProject.layout.buildDirectory.value(newBuildDir)
 subprojects {
     val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
     project.layout.buildDirectory.value(newSubprojectBuildDir)
+
+    // Force subproject dependencies (Flutter plugins) to compile using SDK 36
+    project.plugins.withId("com.android.library") {
+        configure<com.android.build.api.dsl.LibraryExtension> {
+            compileSdk = 36
+        }
+    }
 }
 
 subprojects {
