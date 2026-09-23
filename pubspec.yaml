@@ -1,0 +1,27 @@
+name: memc_video_player
+description: "A 100% offline MEMC Android Video Player app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  media_kit: ^1.1.10
+  media_kit_video: ^1.2.4
+  file_picker: ^8.0.0
+  flutter_displaymode: ^0.6.0
+  screen_brightness: ^2.0.0
+  volume_controller: ^3.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
