@@ -20,14 +20,3 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
-
-// Global API 36 enforcement across all plugin subprojects
-subprojects {
-    afterEvaluate {
-        if (project.hasProperty("android")) {
-            configure<com.android.build.gradle.BaseExtension> {
-                compileSdkVersion(36)
-            }
-        }
-    }
-}
