@@ -1,4 +1,3 @@
-
 pluginManagement {
     val flutterSdkPath = run {
         val properties = java.util.Properties()
