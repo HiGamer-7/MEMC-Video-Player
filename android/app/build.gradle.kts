@@ -5,12 +5,12 @@ plugins {
 
 configure<com.android.build.api.dsl.ApplicationExtension> {
     namespace = "com.example.memc_video_player"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.memc_video_player"
         minSdk = 21
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
     }
